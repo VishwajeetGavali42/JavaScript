@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+	<script>
+
+
+		let units = parseInt(prompt("Enter the electricity unit: "))
+		amount = 0
+
+		if (units <= 100) {
+			document.write("3 rupees per unit \n<br>")
+			amount = units * 3
+			document.write("the total bill is "+amount)
+
+		}
+		else if ( units <= 200) {
+			document.write("4 rupees per unit")
+			amount = (units * 4)+((units - 100) * 4)
+			document.write("the total bill is"+amount)
+
+		}
+		else {
+			document.write("5 rupees per unit")
+			amount = (100 * 3)+(100 * 4)+((units - 200) * 5)
+			document.write("the total bill is"+amount)
+
+		}
+
+	</script>
+</body>
+
+</html>
