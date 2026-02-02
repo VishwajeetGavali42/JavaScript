@@ -1,0 +1,34 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <script>
+            class Bank {
+                constructor() {
+                    
+                    this.balance = parseInt(prompt("Enter the balance amount: "));
+                    document.write("The total balance is " + this.balance + "<br>");
+                }
+
+                deposit() {
+                    let depo_amt = parseInt(prompt("Enter the deposit amount: "));
+                    this.balance += depo_amt; 
+                    document.write("The deposit amount is " + depo_amt + "<br>");
+                    document.write("Now the total balance is " + this.balance + "<br>");
+                }
+
+                withdraw() {
+                    let with_amt = parseInt(prompt("Enter the withdraw amount: "));
+                    this.balance -= with_amt; 
+                    document.write("The withdraw amount is " + with_amt + "<br>");
+                    document.write("Now the total balance is " + this.balance + "<br>");
+                }
+            }
+
+            let s = new Bank(); 
+            s.deposit();
+            s.withdraw();
+        </script>
+    </body>
+</html>

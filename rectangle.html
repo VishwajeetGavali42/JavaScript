@@ -1,0 +1,28 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <script>
+            class rectangle{
+
+                constructor(length,breadth){
+                    this.length = length;
+                    this.breadth = breadth;
+                }
+
+                area(){
+                    document.write("The area of rectangle is: "+this.length*this.breadth+"<br>");
+                }
+
+                perimeter(){
+                    document.write("The area of rectangle is: "+2*(this.length + this.breadth));
+                }
+            }
+
+            let r = new rectangle(10,7);
+            r.area();
+            r.perimeter();
+        </script>
+    </body>
+</html>
